@@ -1,42 +1,70 @@
-Star Wars API Explorer
-Este projeto é uma aplicação web que utiliza a API pública do Star Wars (SWAPI) para exibir informações sobre personagens, naves e filmes da franquia Star Wars. A aplicação permite filtrar personagens por gênero, ordenar naves por diferentes critérios e recomendar filmes em ordem de lançamento ou cronológica.
+# Star Wars API Explorer
 
-Estrutura do Projeto
-Arquivos
-index.html: Contém a estrutura HTML da aplicação.
-script.js: Contém o código JavaScript para buscar e exibir dados da API.
-style.css: Contém os estilos CSS para a aplicação.
-assets/logo star wars.png: Imagem do logo do Star Wars.
-Funcionalidades
-Personagens
-Exibe os 10 primeiros personagens da API.
-Permite filtrar personagens por gênero (masculino, feminino, desconhecido).
-Exibe detalhes do personagem ao clicar no botão "Ver Detalhes".
-Naves
-Exibe uma lista de naves.
-Permite ordenar as naves por tamanho, tripulação ou passageiros.
-Filmes
-Recomenda filmes em ordem de lançamento ou cronológica.
-Como Usar
-Clone o repositório para sua máquina local.
-Abra o arquivo index.html em um navegador web.
-Código
-HTML
-O arquivo index.html contém a estrutura HTML da aplicação, incluindo seções para personagens, naves e filmes.
+Este projeto é uma aplicação web que consome a API do Star Wars (SWAPI) para exibir informações sobre personagens, naves e filmes da franquia Star Wars.
 
-CSS
-O arquivo style.css contém os estilos CSS para a aplicação, incluindo estilos para o corpo, logo, nav-bar, seções, filtros e cards.
+## Funcionalidades
 
-JavaScript
-O arquivo script.js contém o código JavaScript para buscar e exibir dados da API.
+- Listar os 10 primeiros personagens com filtro de gênero.
+- Exibir detalhes de um personagem selecionado.
+- Listar naves com opções de ordenação por tamanho, tripulação e passageiros.
+- Recomendar filmes com opções de ordenação por data de lançamento ou ordem cronológica.
 
-Funções Principais
-fetchCharacters(): Busca e exibe os 10 primeiros personagens.
-displayCharacters(characters): Exibe os personagens na página.
-showCharacterDetails(url): Exibe detalhes do personagem.
-filterCharacters(): Filtra personagens por gênero.
-fetchStarships(sortBy): Busca e exibe naves, ordenadas por um critério.
-sortAndDisplayStarships(starships, sortBy): Ordena e exibe as naves.
-displayStarships(starships): Exibe as naves na página.
-recommendFilms(order): Recomenda filmes em ordem de lançamento ou cronológica.
-displayRecommendedFilms(films): Exibe os filmes recomendados na página.
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+
+## Estrutura do Projeto
+
+```
+/c:/Users/isabe/Desktop/star-wars-teste
+│
+├── assets
+│   └── logo star wars.png
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## Como Executar o Projeto
+
+1. Clone o repositório para sua máquina local:
+    ```sh
+    git clone https://github.com/seu-usuario/star-wars-teste.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd star-wars-teste
+    ```
+3. Abra o arquivo `index.html` em seu navegador:
+    - No Windows: Dê um duplo clique no arquivo `index.html`.
+    - No macOS: Clique com o botão direito no arquivo `index.html` e selecione "Abrir com" > "Safari" (ou outro navegador de sua preferência).
+    - No Linux: Clique com o botão direito no arquivo `index.html` e selecione "Abrir com" > "Firefox" (ou outro navegador de sua preferência).
+
+## Detalhes dos Arquivos
+
+### index.html
+
+Este arquivo contém a estrutura HTML da aplicação, incluindo seções para personagens, naves e filmes.
+
+### style.css
+
+Este arquivo contém os estilos CSS para a aplicação, incluindo layout, cores e responsividade.
+
+### script.js
+
+Este arquivo contém o código JavaScript para buscar dados da API do Star Wars, filtrar e exibir personagens, ordenar e exibir naves, e recomendar filmes.
+
+
+## Uso
+
+Para utilizar a aplicação, siga os passos abaixo:
+
+1. Abra o arquivo `index.html` em seu navegador.
+2. Navegue pelas seções de personagens, naves e filmes.
+3. Utilize os filtros e opções de ordenação para explorar as informações conforme sua preferência.
+4. Clique em um personagem para ver mais detalhes sobre ele.
+5. Explore as naves utilizando as opções de ordenação disponíveis.
+6. Veja recomendações de filmes ordenados por data de lançamento ou ordem cronológica.
