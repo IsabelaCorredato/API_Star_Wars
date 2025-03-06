@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars API Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo star wars.png" alt="Logo Star Wars">
+            <h1>STAR WARS API</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#characters-section">Personagens</a></li>
+                <li><a href="#starships-section">Naves</a></li>
+                <li><a href="#films-section">Recomendar Filmes</a></li>
+            </ul>
+        </nav>
+        <hr class="separator">
+    </header>
+    <section id="characters-section">
+        <h2>10 Primeiros Personagens com Filtro de Gênero</h2>
+        <select id="gender-filter">
+            <option value="all">Todos</option>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+            <option value="n/a">Desconhecido</option>
+        </select>
+        <button onclick="filterCharacters()">Filtrar</button>
+        <div id="characters-list"></div>
+    </section>
+    <section id="character-details-section">
+        <h2>Detalhes do Personagem</h2>
+        <div id="character-details"></div>
+    </section>
+    <hr class="separator">
+    <section id="starships-section">
+        <h2>Naves</h2>
+        <select id="starship-sort">
+            <option value="length">Tamanho</option>
+            <option value="crew">Tripulação</option>
+            <option value="passengers">Passageiros</option>
+        </select>
+        <button onclick="fetchStarships(document.getElementById('starship-sort').value)">Ordenar Naves</button>
+        <div id="starships-list"></div>
+    </section>
+    <hr class="separator">
+    <section id="films-section">
+        <h2>Recomendar Filmes</h2>
+        <select id="film-order">
+            <option value="release">Lançamento</option>
+            <option value="chronological">Cronológica</option>
+        </select>
+        <button onclick="recommendFilms(document.getElementById('film-order').value)">Recomendar</button>
+        <div id="recommended-films-list"></div>
+        <div id="character-films-list"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
